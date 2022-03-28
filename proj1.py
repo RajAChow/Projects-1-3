@@ -16,10 +16,10 @@ def madLib3():
 is there, they want to see the {noun_1}'s {number_1} {body_part_1}s"
     print(third_madlib)
 
-""
+"""
 This body of code asks the user for an input, if the input is 1, 2, or 3 then it runs the corresponding story function and stop asking the user for an input, 
 if it's q it will stop asking the user for an input, if it is anything else then it will tell the user it was an invalid input and asks the user again.
-""
+"""
 while True:
     user_choice = input("What story would you like to choose? Enter story number 1, 2, 3 or q to quit: ")
     if user_choice == "1" or user_choice == "2" or user_choice == "3":
