@@ -1,5 +1,6 @@
 user_choice = ""
 
+#These functions contain the text for each story
 def madLib1(): 
     first_madlib = f"There once was the {est_adjective_1} {noun_1} ever, that loved {plural_noun_1} so much, since they were so {adjective_1} they cut off their \
 {number_1} {body_part_1}(s) and gave them to the {plural_noun_1} and as a reward, they were given the Death Note in {place_1}, essentially {ing_verb_1} humanity"
@@ -15,6 +16,10 @@ def madLib3():
 is there, they want to see the {noun_1}'s {number_1} {body_part_1}s"
     print(third_madlib)
 
+""
+This body of code asks the user for an input, if the input is 1, 2, or 3 then it runs the corresponding story function and stop asking the user for an input, 
+if it's q it will stop asking the user for an input, if it is anything else then it will tell the user it was an invalid input and asks the user again.
+""
 while True:
     user_choice = input("What story would you like to choose? Enter story number 1, 2, 3 or q to quit: ")
     if user_choice == "1" or user_choice == "2" or user_choice == "3":
