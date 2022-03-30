@@ -1,10 +1,11 @@
 import random
+x = random.randint(1, 99)
 
 def userGame():
-    secret_number = random.randint(1,100)
+    secret_number = random.randint(x, 100)
     user_guess = 0
     while user_guess != secret_number:
-        user_guess = int(input("Guess a number between 1 and 100: "))
+        user_guess = int(input(f"Guess a number between {x} and 100: "))
         if user_guess > secret_number:
             print("The number is smaller!")
         elif user_guess < secret_number:
@@ -41,4 +42,4 @@ while True:
         break
     else:
         print("Invalid input")
-       
+        
