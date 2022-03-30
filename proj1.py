@@ -37,10 +37,10 @@ while True:
             madLib2()
         elif user_choice == "3":
             madLib3()
-        break
     elif user_choice == "q":
         print("Quiting")
         break
     else:
         print("Invalid input")
         continue
+        
