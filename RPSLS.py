@@ -15,7 +15,7 @@ def playMove():
         if user_choice in moves:
             #This checks if the user chose the computer chose the same move then prints a relevant statment
             if user_choice == computer_choice:
-                print("You both chose the same move, it's a tie!")
+                print(f"You both chose {user_choice}, it's a tie!")
             #This checks if the user chose a winning move against the computer then prints a relevant statment 
             elif (user_choice == moves[0] and (computer_choice == moves[2] or computer_choice == moves[3])) or \
             (user_choice == moves[1] and (computer_choice == moves[0] or computer_choice == moves[4])) or \
@@ -23,7 +23,7 @@ def playMove():
             (user_choice == moves[3] and (computer_choice == moves[4] or computer_choice == moves[1])) or \
             (user_choice == moves[4] and (computer_choice == moves[2] or computer_choice == moves[0])):
                 win_count += 1
-                print(f"You won by choosing {user_choice}")    
+                print(f"You won by choosing {user_choice} and the computer choosing {computer_choice}")    
             #This checks if the computer chose a winning move against the user then prints a relevant statment
             elif (computer_choice == moves[0] and (user_choice == moves[2] or user_choice == moves[3])) or \
             (computer_choice == moves[1] and (user_choice == moves[0] or user_choice == moves[4])) or \
@@ -31,7 +31,7 @@ def playMove():
             (computer_choice == moves[3] and (user_choice == moves[4] or user_choice == moves[1])) or \
             (computer_choice == moves[4] and (user_choice == moves[2] or user_choice == moves[0])):
                 loss_count += 1
-                print(f"You lost because the computer chose {computer_choice}")    
+                print(f"You lost because the computer chose {computer_choice} and you chose {user_choice}")    
         elif user_choice == "q":
             print(f"You won {win_count} time(s) \nThe computer won {loss_count} time(s)")
             break
