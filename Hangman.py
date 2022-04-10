@@ -17,7 +17,7 @@ def wordToGuess(words):
 #This is the main function where the game is played
 def playGame():
     hangman_pics.reverse()
-    #The line below calls my unique function go to line 108 to see what it does
+    #The line below calls my unique function go to line 106 to see what it does
     user_list = makeList()
     #This intial while loop will continue playing the game until the user quits
     while True:
