@@ -88,17 +88,17 @@ def playGame():
         while True:
             user_play_again = input("do you want to play again (y) or quit (q)?: ")  
             user_play_again.lower()
-            if user_play_again.lower() == "y":
+            if user_play_again == "y":
                 print("Playing again")
                 break
-            elif user_play_again.lower() == "q":
+            elif user_play_again == "q":
                 print("gg")
                 break
             else:
                 print("Invalid input")
         
         #this continues the intial while loop, continuing the game
-        if user_play_again.lower() == "y":
+        if user_play_again == "y":
             continue
         #this break out of the intial while loop, ending the game
         break 
