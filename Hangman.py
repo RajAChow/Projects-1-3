@@ -1,5 +1,4 @@
 import random
-from re import X
 from library import words, hangman_pics, good_guess, bad_guess
 import string
 import time
